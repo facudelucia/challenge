@@ -1,0 +1,90 @@
+.card__row{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card__column{
+    float: left; 
+    width: 31%;
+    padding: 0 10px;
+    margin-top:20px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card__card {
+    background-color: white;
+    border-radius: 20px;
+    min-height: auto;
+}
+.card__card:hover{
+    transform: scale(1.06, 1.06);
+    cursor: pointer;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+.card__image{
+    width: 95%;
+    border: 5px solid white;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    height: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+.card__body{
+    padding: 15px;
+    padding-top: 10px;
+}
+.card__title{
+    font-weight: 500;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card__description{
+    color: gray;
+    font-size: 14px;
+    overflow-y: scroll;
+    height: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card__description::-webkit-scrollbar {
+    display: none;
+}
+.card__button{
+    display: block;
+  color: #fff;
+  text-align: center;
+  background-color: #4f367a;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  position: relative;
+  bottom: -20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+@media screen and (max-width:992px){
+    .card__column{
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:850px){
+    .card__column{
+        width: 80%;
+        margin-left: 8%;
+    }
+
+}
